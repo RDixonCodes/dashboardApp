@@ -8,9 +8,11 @@ import { Ecommerce, Orders, Calendar, Employees, Stacked,
   Pyramid, Customers, Kanban, Bar, Area, Pie, Line, Financial, ColorPicker, ColorMapping, Editor } from './pages';
 import './App.css'
 
-const App = () => {
+import { useStateContext } from './contexts/ContextProvider';
 
-  const activeMenu = true;
+const App = () => {
+  const { activeMenu } = useStateContext();
+
     
   return (
     <div>
