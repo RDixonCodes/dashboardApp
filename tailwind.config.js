@@ -40,7 +40,7 @@ module.exports = {
         },
         backgroundImage: {
           'hero-pattern':
-            "url('https://media.istockphoto.com/id/1149310608/vector/online-shopping-flat-cartoon-style-vector-illustration.jpg?s=612x612&w=0&k=20&c=qDY2Gli0ZuQC07sevnRrgUYp89EFjLpVnYSDAcA9NPQ=')",
+            "url('https://www.pngmart.com/files/11/Online-Portal-E-Commerce-Transparent-PNG.png')",
         },
       },
     },
