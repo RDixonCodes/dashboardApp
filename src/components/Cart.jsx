@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
 import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
 
@@ -8,8 +8,8 @@ import { Button } from '../components';
 
 const Cart = () => {
 
-  const { currentColor, setCart } = useStateContext();
- 
+  const { currentColor, handleClick } = useStateContext();
+
   return (
     <div className='bg-half-transparent w-full fixed nav-item top-0 right-0'>
       <div className='float-right h-screen duration-1000 ease-in-out dark:text-gray-200 transition-all dark:bg-[#484852] bg-white md:w-400 p-8'>
@@ -25,7 +25,7 @@ const Cart = () => {
           <button
           className='text-2xl p-3 hover:drop-shadow-xl hover:bg-light-gray'
           type='button'
-          onClick={() => setCart(false)}
+          onClick={() => handleClick('ecommerce')}
           style={{ color: 'rgb(153, 171,180)', borderRadius: '50%'}}
           >
             <MdOutlineCancel />
@@ -41,7 +41,7 @@ const Cart = () => {
                 <div className='flex items-center border-1 border-r-0 border-color rounded'>
                   <p className='p-2 border-r-1 dark:border-gray-600 border-color text-red-600'><AiOutlineMinus /></p>
                   <p className='p-2 border-r-1 border-color dark:border-gray-600 text-green-600'>0</p>
-                  <p lassName='p-2 border-r-1 border-color  dark:border-gray-600 text-green-600'><AiOutlinePlus /></p>
+                  <p className='p-2 border-r-1 border-color  dark:border-gray-600 text-green-800'><AiOutlinePlus /></p>
                 </div>
               </div>
             </div>
@@ -74,6 +74,6 @@ const Cart = () => {
       </div>
     </div>
   )
-}
+};
 
-export default Cart
+export default Cart;
