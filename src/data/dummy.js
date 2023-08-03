@@ -534,10 +534,10 @@ export const links = [
         name: 'bar',
         icon: <AiOutlineBarChart />,
       },
-      {
-        name: 'pie',
-        icon: <FiPieChart />,
-      },
+      // {
+      //   name: 'pie',
+      //   icon: <FiPieChart />,
+      // },
       {
         name: 'financial',
         icon: <RiStockLine />,
