@@ -16,7 +16,11 @@ export const ContextProvider = ({ children }) => {
     const [ screenSize, setScreenSize ] = useState(undefined);
     const [currentColor, setCurrentColor] = useState('#03C907');
     const [currentMode, setCurrentMode] = useState('Dark');
-    const [themeSettings, setThemeSettings] = useState(false)
+    const [themeSettings, setThemeSettings] = useState(false);
+    const [ chatDisplay, setChatDisplay] = useState(false);
+    const [ cart, setCart ] = useState(false);
+    const [ profileDisplay, setProfileDisplay] = useState(false);
+
     
     const setMode = (e) => {
 
@@ -58,7 +62,13 @@ export const ContextProvider = ({ children }) => {
             setColor,
             setCurrentColor,
             setCurrentMode,
-            currentMode
+            currentMode,
+            chatDisplay,
+            setChatDisplay,
+            cart,
+            setCart,
+            profileDisplay,
+            setProfileDisplay
         }}
         >
             {children}

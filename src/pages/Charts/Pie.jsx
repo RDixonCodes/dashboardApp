@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { pieChartData } from '../../data/dummy';
+import { ecomPieChartData } from '../../data/dummy';
 import { Header, Pie as PieChart } from '../../components';
 
 const Pie = () => (
@@ -12,4 +12,4 @@ const Pie = () => (
     </div>
   )
 
-export default Pie
+export default Pie;
